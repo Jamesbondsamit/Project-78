@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>
+            Class 78
+        </title>
+    </head>
+    <body>
+        <p>How to declare array?
+            <h4 id="declaration_of_array"> </h4></p><hr>
+        <p> How to fetch the first element of the array?
+            <h4 id="first_element"></h4> </p><hr>
+            <p>How to fetch the second element of the array?
+        <h4 id="second_element"></h4></p><hr>
+        <p>How to fetch the third element of the array?
+            <h4 id="third_element"></h4></p><hr>
+            <p>How to get the length of the array?
+                <h4 id="display_length"> </h4></p><hr>
+            <p> How to loop the array
+                <h4 id="loop_array"></h4> </p><hr>
+                <p>How to add element at the end of the array?
+            <h4 id="add_element"></h4></p><hr>
+            <p>How to add more element at the end of the array?
+                <h4 id="add_more_element"></h4></p><hr>
+                <p>How to declare the arrays with alphabets?
+                <h4 id="declaration_alphabet"></h4></p><hr>
+                <p>How to sort the arrays with alphabets?
+                    <h4 id="sort_alphabet"></h4></p><hr>
+                    <p>How to reverse the arrays with alphabets?
+                        <h4 id="reverse_alphabet"></h4></p><hr>
+                        <p>How to declare the array with numbers?
+                            <h4 id="declare_number"></h4></p><hr>
+                            <p>How to find the maximum number from the arrays ?
+                                <h4 id="declare_max_number"></h4></p><hr>
+                                <p>How to find the minimum number from the array
+                                    <h4 id="declare_min_number"></h4></p><hr>
+                                    <h3 style="background-color: red; font-size: 23px;"> ADDITIONAL ACTIVITY </h3>
+<p> How to add element at the start of the array ? <h4 id="add_element_at_the_start_of_array"> </h4> </p>
+<hr> <p> How to add more element at the start of the array ? <h4 id="add_more_element_at_the_start_of_array"> </h4> </p> <hr>
+<p> How to remove element from the start of the array ? <h4 id="remove_element_from_start_of_array"> </h4> </p> <hr>
+<p> How to remove element from the end of the array ? <h4 id="remove_element_from_end_of_array"> </h4> </p> <hr> <p> How to merge two arrays ? <h4 id="merge_two_arrays"> </h4> </p>
+    </body>
+    <script>
+        var fruits=["Apple","Mango","Banana"];
+        console.log(fruits);
+        document.getElementById("declaration_of_array").innerHTML=fruits;
+       var first_fruit=fruits[0];
+       console.log(first_fruit);
+       document.getElementById("first_element").innerHTML=first_fruit;
+       var second_fruit=fruits[1];
+       console.log(second_fruit);
+       document.getElementById("second_element").innerHTML=second_fruit;
+       var third_fruit=fruits[2];
+       console.log(third_fruit);
+       document.getElementById("third_element").innerHTML=third_fruit;
+       var length_array=fruits.length;
+       console.log(length_array);
+       document.getElementById("display_length").innerHTML=length_array;
+      var array_loop="";
+      for(i=0;i<fruits.length;i++){console.log(fruits[i]);
+    array_loop=array_loop+fruits[i]+"<br>";}
+    document.getElementById("loop_array").innerHTML=array_loop;
+    fruits.push("lemon");
+    console.log(fruits);
+    document.getElementById("add_element").innerHTML=fruits;
+    fruits.push("watermelon");
+    console.log(fruits);
+    document.getElementById("add_more_element").innerHTML=fruits;
+    var alphabet=["l" ,"a" , "e" , "j" , "b" , "g" , "f" , "h" , "c" , "d" , "i" , "k"];
+    console.log(alphabet);
+    document.getElementById("declaration_alphabet").innerHTML=alphabet;
+    alphabet.sort();
+    console.log(alphabet);
+    document.getElementById("sort_alphabet").innerHTML=alphabet;
+    alphabet.reverse();
+    console.log(alphabet);
+    document.getElementById("reverse_alphabet").innerHTML=alphabet;
+    var numbers=["45", "4", "9", "16", "25"];
+    console.log(numbers);
+    document.getElementById("declare_number").innerHTML=numbers;
+    var max_number=Math.max.apply(Math,numbers);
+    console.log(max_number);
+    document.getElementById("declare_max_number").innerHTML=max_number;
+    var min_number=Math.min.apply(Math,numbers);
+    console.log(min_number);
+    document.getElementById("declare_min_number").innerHTML=min_number;
+    console.log("ADDITIONAL ACTIVITY");
+fruits.unshift("watermelon"); console.log(fruits); document.getElementById("add_element_at_the_start_of_array").innerHTML = fruits;
+fruits.unshift("strawberry"); console.log(fruits); document.getElementById("add_more_element_at_the_start_of_array").innerHTML = fruits;
+fruits.shift(); console.log(fruits); document.getElementById("remove_element_from_start_of_array").innerHTML = fruits;
+fruits.pop(); console.log(fruits); document.getElementById("remove_element_from_end_of_array").innerHTML = fruits;
+var first_world_countries = ["USA" , "CANADA" , "JAPAN"]; var second_world_countries = ["CHINA" , "RUSSIA" , "ROMANIA"]; var all_countries = first_world_countries.concat(second_world_countries); console.log(all_countries); document.getElementById("merge_two_arrays").innerHTML = all_countries;
+    </script>
+</html>
